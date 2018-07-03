@@ -1,0 +1,90 @@
+@import url(https://fonts.googleapis.com/css?family=Russo+One);
+@import url(https://fonts.googleapis.com/css?family=Merriweather:400,400italic);
+
+/* layout */
+html, body, article, .glass::before {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.glass {
+  position: relative;
+}
+
+.glass::before {
+  z-index: -1;
+  display: block;
+  position: absolute;
+  content: ' ';
+}
+
+/* backgrounds */
+body {
+  /* background-image: url('path/to/image.jpg'); For this demo image is a data uri, see below */
+  background-size: cover;
+}
+
+.glass::before {
+  /* background-image: url('path/to/blurred-image.jpg'); For this demo image is a data uri, see below */
+  background-size: cover;
+  opacity: 0.5;
+}
+
+.glass {
+  background-color: white;
+}
+
+/* transformations */
+.glass.down {
+  transform: translateY(100%) translateY(-5em) translateZ(0);
+}
+
+.glass.down::before {
+  transform: translateY(-100%) translateY(5em) translateZ(0);
+}
+
+.glass.up, .glass.up::before {
+  transform: translateY(0) translateZ(0);
+}
+
+/* transitions */
+.glass, .glass::before {
+  transition: transform 0.5s ease-out;
+}
+
+/* typography, etc. */
+h1 {
+  font: 4em / 1.4 'Russo One', sans-serif;
+  margin: 0;
+  text-align: center;
+}
+
+p {
+  font: 1.4em / 1.4 'Merriweather', serif;
+  max-width: 30em;
+  margin: 0.5em auto;
+  padding: 0 1em;
+}
+
+em {
+  font-style: italic;
+}
+
+.toggle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 1.25em;
+  height: 1.25em;
+  background-color: rgba(51, 51, 51, 0.5);
+  font-size: 4em;
+  border: 0;
+  border-radius: 0 0 10%;
+}
+
+/* data-uri resources */
+body {
+    background-image: url('/assets/projects/1.jpg')
+}

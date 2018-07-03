@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>GISMo @ SLAC National Accelerator Laboratory</title>
+    <meta name="description" content="Grid Integration, Systems, and Mobility." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Codeply">
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/animate.min.css" />
+    <link rel="stylesheet" href="/css/ionicons.min.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+
+    <!--script>
+      window.addEventListener('load', onVrViewLoad)
+      function onVrViewLoad() {
+        var vrView = new VRView.Player('#vrview', {
+          image: 'vrview/index.html?image=http://127.0.0.1:8887/vrview/examples/gallery/taj-mahal.jpg',
+          width: '800px',
+          height: '400px',
+          is_stereo: false
+        });
+      }
+
+    </script-->
+  </head>
+
+  <body>
+    <nav id="topNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <!--button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button-->
+                <a class="navbar-brand page-scroll" href="#first">
+                  <img class="navbar-logo" src="/assets/SLAC-primary-logo.png"/>
+                </a>
+            </div>
+            <div class="navbar-collapse collapse" id="bs-navbar">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a class="page-scroll" href="/index.html#one">GISMo Lab</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="/index.html#two">People</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="/index.html#three">Projects</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="/index.html#last">Contact</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" data-toggle="modal" title="Virtual Tour of GISMo Lab" href="tour.html?image=/assets/vr/lab01.jpg">Take a virtual tour</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="first">
+        <div class="header-content">
+            <div class="inner">
+                <h1>VADER</h1>
+                <h4>Visualization and Analytics for Distributed Energy Resources</h4>
+                <hr>
+                <!--a href="#video-background" id="toggleVideo" data-toggle="collapse" class="btn btn-primary btn-xl">Toggle Video</a--> &nbsp;
+                <a href="#one" class="page-scroll btn btn-primary btn-xl">Learn More</a>
+            </div>
+        </div>
+        <video autoplay="" loop="" class="fillWidth fadeIn wow collapse in" data-wow-delay="0.5s" poster="/assets/projects/1_1.jpg" id="video-background">
+            <source src="assets/slac-gismovid1.mp4" type="video/mp4">Your browser does not support the video tag. Please upgrade your browser.
+        </video>
+    </header>
+
+    <section class = "bg-fade1" id="one">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 text-center">
+                    <h2 class="margin-top-0 text-primary">Visualization and Analytics for Distributed Energy Resources (VADER)</h2>
+                    <br>
+                    <p class="text-dark">
+                      In its current state, the distribution system is incapable of handling small to moderate amounts of solar photovoltaic (PV) generation penetration. This is because the system was initially designed for handling passive loads, which, at the level of a substation, have low variability and are forecastable with high accuracy. It has been an open loop system with little monitoring and control. With the addition of PV energy sources, the overall scenario will change dramatically due to (1) two-way power flow on the network, and (2) high aggregate variability. Additionally, changes on the consumption side lead to a number of smart loads, electric vehicles (EVs), and Demand Response.
+                    </p>
+                    <p class="text-dark">
+                      These fundamental changes in the generation and consumption of power will lead to a number of practical engineering problems that must be overcome to allow increased penetration of distributed PV. Solving the specific engineering challenges which come at any moderate level of PV penetration requires closed-loop integration of data from (1) PV sources, (2) customer load data from smart meters, (3) EV charging, and (4) local and line mounted precision instruments. These types of data are not traditionally used by utilities in operations since they are ”non-SCADA” and the current grid does not require such granularity of control.
+                    </p>
+                    <p class="text-dark">
+                      To integrate this data and provide real time intelligence from these non-SCADA data, we propose the Visualization and Analytics of Distribution Systems with Deep Penetration of Distributed Energy Resources, or VADER platform. VADER is a unified data analytics platform that enables the integration of massive and heterogeneous data streams for granular real-time monitoring, visualization, and control of Distributed Energy Resources (DER) in distribution networks.
+                    </p>
+                    <img src="/assets/projects/VADERpipeline.png" class="img-responsive center-block" />
+                    <p class="brighter-color">
+                      <br/>
+                      The project aims to: <br/>
+                        Build a set of tools to integrate and model a large number of disparate sensor sources to enable distribution system control;
+                        Verify the tools, utilizing data from industry and utility partners; and
+                        Validate the platform in a pilot testbed combining hardware in the loop simulations and real-time data from deployed hardware in the field.
+
+                    </p>
+                    <p class="brighter-color">
+                      Project Website: <a href="http://sites.slac.stanford.edu/vader/">VADER</a>
+                    </p>
+
+                    <p class="brighter-color">
+                      Funding Agency:
+                    </p>
+                    <img src="/assets/projects/sunshot.jpg" class="img-responsive" width="100px" />
+                      <a href="/index.html#three" class="btn btn-default btn-xl">View Other Projects</a>
+              </div>
+            </div>
+          </div>
+    </section>
+
+    <!--scripts loaded here -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/jquery.easing.min.js"></script>
+    <script src="/js/wow.js"></script>
+    <script src="/js/scripts.js"></script>
+
+
+
+  </body>
+</html>
