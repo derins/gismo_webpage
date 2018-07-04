@@ -9,8 +9,3 @@ function toggle() {
     button.innerText = '+';
   }
 }
-
-
-function scroll() {
-    document.getElementById("myDIV").style.overflow = "scroll";
-}
