@@ -130,9 +130,9 @@
             <div class="row">
                 <div class="col-lg-4 col-md-4 text-center">
                     <div class="feature">
-                      <img class="img-circle" width="100px" height="100px" src="assets/people/eckara.jpg" />
-                      <h3 class="brighter-color text-dark">Emre Can Kara</h3>
-                      <p class="text-muted">Swiss Army Knife</p>
+                      <img class="img-circle" width="100px" height="100px" src="assets/people/bserbetcioglu.jpg" />
+                      <h3 class="brighter-color text-dark">Berk Serbetcioglu</h3>
+                      <p class="text-muted">Software Engineer</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 text-center">
@@ -188,6 +188,15 @@
                       <p class="text-muted">Financial Analyst</p>
                     </div>
                 </div>
+                <div class="col-lg-4 col-md-4 text-center">
+                    <div class="feature">
+                      <img class="img-circle" width="100px" height="100px" src="assets/people/apilipiszyn.jpg" />
+                      <h3 class="brighter-color text-dark">Ashley Pilipiszyn</h3>
+                      <p class="text-muted">Grid Resilliance and Blockchain Researcher</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
                 <div class="col-lg-4 col-md-4 text-center">
                     <div class="feature">
                       <img class="img-circle" width="100px" height="100px" src="assets/people/you.jpg" />
@@ -302,6 +311,22 @@
                         </div>
                     </a>
                 </div>
+              <div class="clearfix hidden-lg"> </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="projects/grip.html" class="gallery-box" data-toggle="modal">
+                        <img src="./assets/projects/7.jpg" class="img-responsive" alt="Image 6">
+                        <div class="gallery-box-caption">
+                            <div class="gallery-box-content">
+                                <div>
+                                    <i class="icon-lg ion-ios-search"></i>
+                                    <p>
+                                      GRIP
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -380,8 +405,9 @@
                     <hr class="primary">
                     <p class="dark-color">Fill out the form below and we'll get back to you as soon as possible.</p>
                 </div>
+
                 <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <form class="contact-form row">
+                    <form method="post" name="contact_form" action="/php/contact_form.php" class="contact-form row">
                         <div class="col-md-4">
                             <label></label>
                             <input type="text" class="form-control" placeholder="Name">
@@ -396,11 +422,11 @@
                         </div>
                         <div class="col-md-12">
                             <label></label>
-                            <textarea class="form-control" rows="9" placeholder="Your message here.."></textarea>
+                            <textarea class="form-control" rows="9" placeholder="Your message here.." name="comment" id="comment"></textarea>
                         </div>
                         <div class="col-md-4 col-md-offset-4">
                             <label></label>
-                            <button type="button" data-toggle="modal" data-target="#alertModal" class="btn-default btn-block btn-lg btn btn-xl">Send <i class="ion-android-arrow-forward"></i></button>
+                            <button type="button" data-toggle="modal" data-target="#alertModal" class="btn-default btn-block btn-lg btn btn-xl" name="send">Send <i class="ion-android-arrow-forward"></i></button>
                         </div>
                     </form>
                 </div>

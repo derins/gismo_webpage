@@ -1,6 +1,7 @@
 
 @import url(https://fonts.googleapis.com/css?family=Russo+One);
 
+
 .content:before {
   content: "";
   position: fixed;
@@ -10,7 +11,7 @@
   bottom: 0;
   z-index: -1;
   display: block;
-  background: url('/assets/sp.jpg') fixed no-repeat;
+  background: url('/assets/slac-gismolab1.jpg') fixed no-repeat;
   background-size: cover;
   width: 100%;
   height: 100%;
@@ -21,10 +22,114 @@
   filter: blur(5px);
 }
 
-  .content {
+.content {
   overflow: auto;
   position: relative;
 }
+
+/* #voltron-page .content:before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  display: block;
+  background: url('/assets/projects/2.jpg') fixed no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+
+#voltron-page .content {
+  overflow: auto;
+  position: relative;
+}
+
+
+#powernet-page .content:before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  display: block;
+  background: url('/assets/grid.jpg') fixed no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+
+#powernet-page .content {
+  overflow: auto;
+  position: relative;
+}
+
+#voltron-testing-page .content:before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  display: block;
+  background: url('/assets/projects/4.jpg') fixed no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+
+#voltron-testing-page .content {
+  overflow: auto;
+  position: relative;
+}
+
+#vehicle-grid-page .content:before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  display: block;
+  background: url('/assets/vehicle-grid.jpg') fixed no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+
+#vehicle-grid-non-residential-page .content {
+  overflow: auto;
+  position: relative;
+} */
+
+
+
 
 .white-text {
   color:#fff;
@@ -32,10 +137,10 @@
 
 .shadow   {
   margin: 100px;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(51, 51, 51, 0.7);
   padding: 50px;
   box-shadow: 0 0 5px gray;
-  border-radius: 25px;
+  border-radius: 10px;
 }
 
 h1 {
