@@ -14,9 +14,6 @@ body {
     webkit-tap-highlight-color: #222;
 }
 
-.glass::before{
-
-}
 hr {
     max-width: 80px;
     border-width: 3px;
@@ -72,6 +69,9 @@ background-color: #333;
 .bg-dark {
     color: #eee;
     background-color: #222;
+
+}.bg-light{
+    background-color: rgba(255,255,255,0.6);
 }
 
 /*make it more efficient*/
@@ -91,6 +91,8 @@ background-color: #333;
 .text-faded {
     color: rgba(245,245,245,0.7);
 }
+
+
 
 .text-justify {
     text-allign: justify;
@@ -513,6 +515,20 @@ fieldset[disabled] .btn-default.active {
     opacity: 0.7;
 }
 
+.btn.btn-dark {
+  background-color: transparent;
+  border:1px solid #555555;
+  border-color:#555555;
+  -webkit-transition: all .35s;
+  -moz-transition: all .35s;
+  transition: all .35s;
+}
+
+.btn.btn-dark:hover {
+    opacity: 0.7;
+}
+
+
 .btn {
     border: 0;
     border-radius: 290px;
@@ -545,3 +561,6 @@ img::-moz-selection {
     color: #fff;
     background: 0 0;
 }
+
+iframe.publ {display:block}
+.w3-container,.w3-panel{padding:0.01em 16px}.w3-panel{margin-top:16px;margin-bottom:16px}
