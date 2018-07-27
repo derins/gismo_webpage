@@ -12,31 +12,12 @@
     <link rel="stylesheet" href="/css/styles.css" />
     <link rel="stylesheet" href="/css/glass.css" />
 
-
-    <!--script>
-      window.addEventListener('load', onVrViewLoad)
-      function onVrViewLoad() {
-        var vrView = new VRView.Player('#vrview', {
-          image: 'vrview/index.html?image=http://127.0.0.1:8887/vrview/examples/gallery/taj-mahal.jpg',
-          width: '800px',
-          height: '400px',
-          is_stereo: false
-        });
-      }
-
-    </script-->
   </head>
 
   <body>
     <nav id="topNav" class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
             <div class="navbar-header">
-                <!--button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button-->
                 <a class="navbar-brand page-scroll" href="#first">
                   <img class="navbar-logo" src="/assets/images/SLAC-primary-logo.png"/>
                 </a>
@@ -60,7 +41,7 @@
     <div id="one" class="content shadow white-text text-justify">
     <br>
 
-      <h1 style = "text-decoration: underline overline; ">VOLTRON Common Data Model</h1>
+      <h1>VOLTRON Common Data Model</h1>
     <br>
       <p>
       The VOLTTRON Transactive Energy Platform provides a general purpose message bus but does not define message content or processing semantics. While agents and services may be able to send messages across the bus, they cannot communicate without implementing a common protocol and data model. This project will create a protocol adapter layer (potentially implemented as Proxy Agents) on top of the VOLTTRON Message Bus that will enable the reuse of existing, widely used protocols between VOLTTRON agents and services. The message bus will provide a common transport for the message content of protocols such as SEP2, OpenADR, and OCPP, and information models based on IEC61850, MESA/SunSpec Inverter, and Storage and Meter Data Models.            </p>
@@ -77,7 +58,7 @@
                   <div class="col-xs-6 col-sm-3 column">
                       <h4 class="brighter-color">Information</h4>
                       <ul class="list-unstyled">
-                          <li><a href="#publicationsModal" class="gallery-box brighter-color" data-toggle="modal">Publications</a></li>
+                          <li><a href="/google_sheets_managed_pages/publications.html" class="gallery-box brighter-color" data-toggle="modal">Publications</a></li>
                           <li><a href="https://github.com/slacgismo" target="new" class="brighter-color">Code</a></li>
                           <li><a href="https://careers.slac.stanford.edu/" target="new" class="brighter-color">Careers @ SLAC</a></li>
                           <li><a href="https://careers.slac.stanford.edu/benefits-and-rewards" target="new" class="brighter-color">Benefits</a></li>
@@ -86,7 +67,7 @@
                   <div class="col-xs-6 col-sm-3 column">
                       <h4 class="brighter-color">About</h4>
                       <ul class="list-unstyled">
-                          <li><a href="mailto:silak@slac.stanford.edu" class="brighter-color">Contact Us</a></li>
+                          <li><a href="/index.html#last" class="brighter-color">Contact Us</a></li>
                           <li><a target="new" href="https://vue.slac.stanford.edu/maps-and-directions" class="brighter-color">Directions and Map</a></li>
                           <li><a target="new" href="http://slac.stanford.edu" class="brighter-color">SLAC National Accelerator Laboratory</a></li>
                           <li><a target="new" href="http://energy.gov" class="brighter-color">Department of Energy</a></li>
@@ -117,6 +98,15 @@
           </div>
       </footer>
 
+      <div id="publicationsModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div style="width:1000px;" class="container-fluid">
+          </br>
+          </br>
+            <!-- The below line is the publications link, linked to the google spreadsheet on gismo team drive-->
+            <iframe allign="center" width="100%" height="410.5" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ3YnBdrUYr4VWr_biDsGoluSeHNBOYlQOHQW5u7Ah23Aw7b3WQS7M7Qnjw2WQGNwf0_9vqKqygsSBL/pubchart?oid=1947644045&amp;format=interactive"></iframe>
+        </div>
+      </div>
+
 
 
 
@@ -131,3 +121,4 @@
 
 
   </body>
+</html>

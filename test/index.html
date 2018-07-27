@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="./css/styles.css" />
+</head>
+  <body>
+
+    <p id="CMS-test"></p>
+
+    <script id="people-template" type="text/x-handlebars-template">
+      <div class="entry">
+        <h2>{{group_name}}!</h2>
+        <div class="body">
+          {{{people}}}
+        </div>
+      </div>
+    </script>
+
+
+
+
+
+    <script type="text/javascript" src="../js/tabletop.js"></script>
+
+    <script type="text/javascript">
+
+      var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1VWVj53dHIIueT60R0z22936iF6AfjHw0WNwJXHCv_d8/pub?hl=en_US&hl=en_US&hl=en_US&output=html';
+
+      function init() {
+        Tabletop.init( { key: public_spreadsheet_url,
+                         callback: showInfo,
+                         simpleSheet: true } );
+      }
+
+      window.addEventListener('DOMContentLoaded', init)
+
+      function showInfo(data) {
+        // data comes through as a simple array since simpleSheet is turned on
+        alert("Successfully processed " + data.length + " rows!")
+
+        var i;
+        document.getElementById("CMS-test").innerHTML = [data[0].Name] + [ data[0].people];
+        for(i=1; i<data.length; i++){
+
+            document.getElementById("CMS-test").innerHTML += [data[i].Name] + [data[i].people];
+
+        }
+      }
+
+
+    </script>
+
+<!-- <script type="text/javascript">
+
+    function showInfo(data) {
+      // data comes through as a simple array since simpleSheet is turned on
+      alert("Successfully processed " + data.length + " rows!")
+      document.getElementById("CMS-test").innerHTML = [data[2].Name] + [ data[2].people];
+      console.log(data);
+    }
+
+    </script> -->
+
+
+
+  </body>
+</html>

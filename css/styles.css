@@ -35,7 +35,7 @@ a {
 
 a:hover,
 a:focus {
-    color: #3cba54; //#9c27c1
+    color: white; //#9c27c1
     outline: 0;
 }
 
@@ -70,8 +70,10 @@ background-color: #333;
     color: #eee;
     background-color: #222;
 
-}.bg-light{
-    background-color: rgba(255,255,255,0.6);
+}
+
+.bg-light{
+    background-color: white;
 }
 
 /*make it more efficient*/
@@ -125,6 +127,9 @@ aside {
 
 footer {
     padding: 15px;
+    width: 100%;
+    height: auto;
+    bottom: 0;
 }
 
 .no-padding {
@@ -266,12 +271,20 @@ header {
     -o-background-size: cover;*/
 }
 
+.center {
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+
+
+}
+
 header .header-content {
     position: relative;
     width: 100%;
     padding: 100px 15px;
     text-align: center;
-    z-index: 2;
+    color: white;
 }
 
 header .header-content .inner h1 {
@@ -321,6 +334,7 @@ footer {
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
         transform: translateY(-50%);
+        z-index: 2;
     }
 
     header .header-content .inner {
@@ -402,6 +416,7 @@ textarea {
     margin: 0 auto;
     max-width: 650px;
     overflow:hidden;
+    background-color: #222;
 }
 
 .gallery-box .gallery-box-caption {
@@ -561,6 +576,60 @@ img::-moz-selection {
     color: #fff;
     background: 0 0;
 }
+
+.block1 {
+  border: 1px solid black;
+  background-color: #666;
+  height: adaptive;
+  border-radius: 15px;
+}
+
+.block2 {
+  height: adaptive;
+  background-color: #666;
+
+}
+
+.bg-alum {
+  z-index: -1;
+  display: block;
+  background: url('/assets/images/slac-gismolab1.jpg') fixed no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.entry {
+  float: left;
+  width: 200px;
+  border: solid black 3px;
+  height: 250px;
+  padding: 30px;
+  margin: 30px;
+  background: white;
+}
+
+
+#top-image {
+background:url('/assets/images/slac-gismolab1.jpg') fixed no-repeat;
+position:fixed ;
+top:0;
+width:100%;
+z-index:-999999;
+  height:100%;
+  background-size: calc(100% + 50px);
+}
+
+.move {
+  background: url('/assets/images/slac-gismolab1.jpg') fixed no-repeat;
+  position:fixed ;
+  top:0;
+  width:100%;
+  height:100%;
+  background-size: calc(100% + 50px);
+  z-index:-1;
+}
+
 
 iframe.publ {display:block}
 .w3-container,.w3-panel{padding:0.01em 16px}.w3-panel{margin-top:16px;margin-bottom:16px}

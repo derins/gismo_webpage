@@ -14,7 +14,7 @@
   background: url('/assets/images/slac-gismolab1.jpg') fixed no-repeat;
   background-size: cover;
   width: 100%;
-  height: 100%;
+  height: relative;
   -webkit-filter: blur(5px);
   -moz-filter: blur(5px);
   -o-filter: blur(5px);
@@ -27,108 +27,6 @@
   position: relative;
 }
 
-/* #voltron-page .content:before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-  display: block;
-  background: url('/assets/projects/2.jpg') fixed no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-  -webkit-filter: blur(5px);
-  -moz-filter: blur(5px);
-  -o-filter: blur(5px);
-  -ms-filter: blur(5px);
-  filter: blur(5px);
-}
-
-#voltron-page .content {
-  overflow: auto;
-  position: relative;
-}
-
-
-#powernet-page .content:before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-  display: block;
-  background: url('/assets/grid.jpg') fixed no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-  -webkit-filter: blur(5px);
-  -moz-filter: blur(5px);
-  -o-filter: blur(5px);
-  -ms-filter: blur(5px);
-  filter: blur(5px);
-}
-
-#powernet-page .content {
-  overflow: auto;
-  position: relative;
-}
-
-#voltron-testing-page .content:before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-  display: block;
-  background: url('/assets/projects/4.jpg') fixed no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-  -webkit-filter: blur(5px);
-  -moz-filter: blur(5px);
-  -o-filter: blur(5px);
-  -ms-filter: blur(5px);
-  filter: blur(5px);
-}
-
-#voltron-testing-page .content {
-  overflow: auto;
-  position: relative;
-}
-
-#vehicle-grid-page .content:before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-  display: block;
-  background: url('/assets/vehicle-grid.jpg') fixed no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-  -webkit-filter: blur(5px);
-  -moz-filter: blur(5px);
-  -o-filter: blur(5px);
-  -ms-filter: blur(5px);
-  filter: blur(5px);
-}
-
-#vehicle-grid-non-residential-page .content {
-  overflow: auto;
-  position: relative;
-} */
-
-
 
 
 .white-text {
@@ -136,7 +34,9 @@
 }
 
 .shadow   {
-  margin: 100px;
+  margin: 200px;
+  margin-top: 100px;
+  margin-bottom: 120px;
   background: rgba(51, 51, 51, 0.7);
   padding: 50px;
   box-shadow: 0 0 5px gray;
@@ -144,13 +44,13 @@
 }
 
 h1 {
-  font: 4em / 1.4 'Russo One', sans-serif;
+  font-family: 'Questrial','Helvetica Neue',Arial,sans-serif;
   margin: 0;
   text-align: center;
 }
 
-h4 {
-  font: 1em / 1 'Russo One', sans-serif;
+/* h5 {
+  font-family: 'Questrial','Helvetica Neue',Arial,sans-serif;
   margin: 0;
   text-align: center;
-}
+} */

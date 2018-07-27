@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./css/ionicons.min.css" />
     <link rel="stylesheet" href="./css/styles.css" />
 
-    <!--script>
+    <!-- <script>
       window.addEventListener('load', onVrViewLoad)
       function onVrViewLoad() {
         var vrView = new VRView.Player('#vrview', {
@@ -22,10 +22,15 @@
         });
       }
 
-    </script-->
+    </script> -->
+
+    
+
   </head>
 
   <body>
+    <div id="load_screen"><div id="loader"></div></div>
+
     <nav id="topNav" class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -94,7 +99,7 @@
     <!-- Include VR view class from Google -->
     <script>
         WebVRConfig = {
-          BUFFER_SCALE: 0.5,
+          BUFFER_SCALE: 0.1,
           TOUCH_PANNER_DISABLED: false
         };
     </script>
