@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>GISMo @ SLAC National Accelerator Laboratory</title>
+    <meta name="description" content="Grid Integration, Systems, and Mobility." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Codeply">
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/animate.min.css" />
+    <link rel="stylesheet" href="/css/ionicons.min.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/glass.css" />
+
+  </head>
+
+  <body>
+    <nav id="topNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand page-scroll" href="#first">
+                  <img class="navbar-logo" src="/assets/images/SLAC-primary-logo.png"/>
+                </a>
+            </div>
+            <div class="navbar-collapse collapse" id="bs-navbar">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a class="page-scroll" href="/index.html#one">GISMo Lab</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="/index.html#three">Projects</a>
+                    </li>
+                    <li>
+                        <a>HiPAS</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="HiPAS" class="content shadow white-text text-justify">
+    <br>
+
+      <h1>High-Performance Agent-based Simulation using GridLAB-D</h1>
+    <br>
+    <h2>The Issue</h2>
+    <p>
+      Comparative analysis and computational efficiency enabling high performance computing in grid modeling is needed to help customers design DERs into systems that minimize grid impacts. Speeding up the analysis and computational efficiency will help inform agencies, utilities, and ratepayers participating in distribution planning processes of methods to better integrate DERs onto the distribution system.
+    </p>
+    <p>
+      For example, in the Integration Capacity Analysis (ICA) Working Group Report, the iterative method performs iterative power flow simulations while varying the DER level at each node on the distribution system to determine the maximum amount of DER that can be installed without causing distribution system problems. Due to the large number of iterations required (hundreds or thousands per feeder); iterative analysis can result in long processing times, especially when expanded to large numbers of distribution circuits. The ICA Working Group identified ways to utilize more efficient computing resources to address the computational intensity of iterative methods. Measurably improving the speed and accuracy of an open-source modeling tool capable of dynamic time series modeling is critically needed. Doing so will enable quick and accurate distribution studies that include smart inverters, single phase line sections, and transmission impacts.
+    </p>
+    <h2>Project Description</h2>
+    <p>
+      HiPAS is on open-source upgrade to GridLAB-D that speeds up the analysis performance and computational efficiency of GridLAB-D, a tool that helps inform agencies, utilities, and ratepayers about the benefits of planning processes that integrate DERs onto the distribution system. HIPAS includes methods that parallelize many of the iterative methods used in simulations, such as reliability metrics calculations, end-use load calculation, distributed energy storage and distributed generation. HiPAS is intended for both desktop HPC multicore processors and cloud platforms and use intelligent adaptive multi-threading to deploy highly granular parallelization in agent-based simulations. It improves the time-series analysis speed by parallelizing independent agents automatically and using machine-learning to improve powerflow solution performance.
+    </p>
+    <p>
+      The HiPAS version of GridLAB-D will continue to support the many existing capability of GridLAB-D, which is a general-purpose distribution system simulation and analysis modeling software capable of dynamic analysis and estimating the benefits and impacts of smart grid technologies including demand response, detailed unbalanced per phase impacts from DERs, and impacts from behind the meter (PCC) assets such as storage, photovoltaics and wind generation. It is flexible to model real world conditions such as allowing unlocked voltage regulating devices. GridLAB-D modules use C++, a modern programming language that is taught in computer science curriculums at major universities within California. GridLAB-D is fully functional, made freely available and has been fully supported by the user community and the system developers at the US Department Energy’s PNNL and SLAC national laboratory for the past 10 years, and will continue to be supported in this manner
+    </p>
+    <p>
+      GridLAB-D has a rich depth and breadth of supported research capabilities of the modeling software including Volt-VAR optimization and conservation voltage reduction, demand response research, smart appliance controls, microgrid integration, transactive modeling and simulation, storage integration, DER impacts, behind the meter assets, the use of advance metering infrastructure, and complex multi-disciplinary problems presented by new smart grid technologies. In addition, GridLAB-D has also been used to study the impact of microgrid islanding, feeder reconfiguration, and the interaction of multiple islandable and reconnectable microgrids in the presence of high penetration distributed energy resources. GridLAB-D also provides the ability address the study of the impacts of rates and tariffs, as well as the integration of wholesale DER markets.
+    </p>
+    <h2>Anticipated Benefits for California</h>
+    <p>
+      The HiPAS enhancements to GridLAB-D achieved through this project will increase utility analyst productivity in performing DER integration studies, providing specific utility and ratepayer benefits by improving the accuracy and timeliness of results supporting DER interconnection and grid planning. HiPAS GridLAB-D is derived from an open-source and fully functional version of GridLAB-D, and will deliver a broad range of high-performance agent-based simulation capabilities. It will establish the foundation for long-term user and developer support of high-performance versions of GridLAB-D for California utilities, regulators and DER designers. For example, these capabilities can be applied to the development of ICA to help customers and third parties design DER systems that do not exceed hosting capacity by providing accurate information about the amount of DER capacity that can be interconnected at a specific location without significant distribution system upgrades. In addition, results may be used to identify grid locations facing hosting capacity constraints in light of DER growth scenarios that would-be candidates for grid upgrades to accommodate projected DER growth. These results may best be achieved through iterations of successive power flow simulations at each node on the distribution systems. HiPAS GridLAB-D will address the primary barriers to analyzing more locations, for more points in time, more frequently by reducing the computational costs associated with these kinds of analyses.
+    </p>
+
+    <!-- <br>
+    <img src="/assets/projects/3.jpg" class="img-responsive center-block" />
+    <br>
+    <p>
+      Funding Agency:
+    </p>
+    <img src="/assets/projects/cec.jpg" class="img-responsive" width="130px" /> -->
+      </div>
+
+      <footer id="footer">
+
+
+          <div class="container-fluid">
+              <div class="row">
+                  <div class="col-xs-6 col-sm-3 column">
+                      <h4 class="brighter-color">Information</h4>
+                      <ul class="list-unstyled">
+                          <li><a href="/google_sheets_managed_pages/publications.html" class="gallery-box brighter-color" data-toggle="modal">Publications</a></li>
+                          <li><a href="/google_sheets_managed_pages/speakerseries.html" class="gallery-box brighter-color" data-toggle="modal">Speaker Series</a></li>
+                          <li><a href="https://github.com/slacgismo" target="new" class="brighter-color">Code</a></li>
+                          <li><a href="https://careers.slac.stanford.edu/" target="new" class="brighter-color">Careers @ SLAC</a></li>
+                          <li><a href="https://careers.slac.stanford.edu/benefits-and-rewards" target="new" class="brighter-color">Benefits</a></li>
+                      </ul>
+                  </div>
+                  <div class="col-xs-6 col-sm-3 column">
+                      <h4 class="brighter-color">About</h4>
+                      <ul class="list-unstyled">
+                          <li><a href="/index.html#last" class="brighter-color">Contact Us</a></li>
+                          <li><a target="new" href="https://vue.slac.stanford.edu/maps-and-directions" class="brighter-color">Directions and Map</a></li>
+                          <li><a target="new" href="http://slac.stanford.edu" class="brighter-color">SLAC National Accelerator Laboratory</a></li>
+                          <li><a target="new" href="http://energy.gov" class="brighter-color">Department of Energy</a></li>
+                      </ul>
+                  </div>
+              </div>
+              <br/>
+              <span class="pull-right text-muted small">Grid Integration, Systems, and Mobility @ <a href="http://slac.stanford.edu">SLAC</a></span>
+          </div>
+      </footer>
+
+
+    <!--scripts loaded here -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/jquery.easing.min.js"></script>
+    <script src="/js/wow.js"></script>
+    <script src="/js/scripts.js"></script>
+
+  </body>
+</html>

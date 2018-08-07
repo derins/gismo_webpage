@@ -29,38 +29,22 @@
 
 
 <body>
-  <nav id="topNav" class="navbar navbar-default navbar-fixed-top">
+  <nav id="topNav" class="topnav navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
       <div class="navbar-header">
-        <!--button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button-->
         <a class="navbar-brand page-scroll" href="#first">
-                  <img class="navbar-logo" src="/assets/images/SLAC-primary-logo.png"/>
+                  <img class="navbar-logo img-responsive" src="/assets/images/SLAC-primary-logo.png"/>
                 </a>
       </div>
       <div class="navbar-collapse collapse" id="bs-navbar">
         <ul class="nav navbar-nav">
-          <li>
-            <a class="page-scroll" href="#one">GISMo Lab</a>
-          </li>
-          <li>
-            <a class="page-scroll" href="#two">People</a>
-          </li>
-          <li>
-            <a class="page-scroll" href="#three">Projects</a>
-          </li>
-          <li>
-            <a class="page-scroll" href="#last">Contact</a>
-          </li>
+          <li><a class="page-scroll" href="#one">GISMo Lab</a></li>
+          <li><a class="page-scroll" href="#two">People</a></li>
+          <li><a class="page-scroll" href="#three">Projects</a></li>
+          <li><a class="page-scroll" href="#last">Contact</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li>
-            <a class="page-scroll" data-toggle="modal" title="Virtual Tour of GISMo Lab" href="tour.html?image=./assets/vr/lab01.jpg">Take a virtual tour</a>
-          </li>
+          <li><a class="page-scroll" data-toggle="modal" title="Virtual Tour of GISMo Lab" href="tour.html?image=./assets/vr/lab01.jpg">Take a virtual tour</a></li>
         </ul>
       </div>
     </div>
@@ -89,7 +73,7 @@
 
   </header>
 <!-- </section> -->
-  <section class="bg-fade" class="bg-intro" id="one">
+  <section class="bg-fade section-full" class="bg-intro" id="one">
     <div class="container">
       <div class="row">
         <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 text-center">
@@ -196,7 +180,7 @@
           <div class="feature">
             <img class="img-circle" width="100px" height="100px" src="assets/people/apilipiszyn.jpg" />
             <h3 class="brighter-color text-dark"> <a class="text-dark" target="_blank" href="https://www.linkedin.com/in/ashleycpilipiszyn/" data-toggle="modal">Ashley Pilipiszyn</a></h3>
-            <p class="text-muted">Grid Resiliance and Blockchain Researcher</p>
+            <p class="text-muted">Grid Resilience and Blockchain Researcher</p>
           </div>
         </div>
       </div>
@@ -245,7 +229,7 @@
         <div class="col-lg-4 col-md-4 text-center">
           <div class="feature">
             <img class="img-circle" width="100px" height="100px" src="assets/people/spowell.jpg" />
-            <h3 class="brighter-color text-dark"> <a class="text-dark" target="_blank" href="https://www.linkedin.com/in/siobhan-powell-39669389/" data-toggle="modal">Shiobhan Powell</a></h3>
+            <h3 class="brighter-color text-dark"> <a class="text-dark" target="_blank" href="https://www.linkedin.com/in/siobhan-powell-39669389/" data-toggle="modal">Siobhan Powell</a></h3>
             <p class="text-muted">Phd Candidate</p>
           </div>
         </div>
@@ -261,17 +245,17 @@
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-4 text-center">
+        <!-- <div class="col-lg-4 col-md-4 text-center">
           <div class="feature">
             <img class="img-circle" width="100px" height="100px" src="assets/people/.jpg" />
             <h3 class="brighter-color text-dark"> <a class="text-dark" target="_blank" href="https://www.linkedin.com/in/elizabeth-buechler-445583101/" data-toggle="modal">Lily Buechler</a></h3>
             <p class="text-muted">Research Assistant</p>
           </div>
-        </div>
+        </div> -->
         <div class="col-lg-4 col-md-4 text-center">
           <div class="feature">
             <img class="img-circle" width="100px" height="100px" src="assets/people/you.jpg" />
-            <h3 class="brighter-color text-dark"> <a class="text-dark" target="_blank" href="https://www.youtube.com/watch?v=J6OmF4wL3b4" data-toggle="modal">You!</a></h3>
+            <h3 class="brighter-color text-dark">You!</h3>
             <p class="text-muted">Join our team</p>
           </div>
         </div>
@@ -399,7 +383,7 @@
         <div class="clearfix hidden-lg"> </div>
         <div class="col-lg-4 col-sm-6">
           <a href="projects/grip.html" class="gallery-box" data-toggle="modal">
-                        <img src="./assets/projects/7.jpg" class="img-responsive" alt="Image 6">
+                        <img src="./assets/projects/7.png" class="img-responsive" alt="Image 7">
                         <div class="gallery-box-caption">
                             <div class="gallery-box-content">
                                 <div>
@@ -412,11 +396,26 @@
                         </div>
                     </a>
         </div>
+        <div class="col-lg-4 col-sm-6">
+          <a href="projects/pvinsight.html" class="gallery-box" data-toggle="modal">
+                        <img src="./assets/projects/8.jpg" class="img-responsive" alt="Image 8">
+                        <div class="gallery-box-caption">
+                            <div class="gallery-box-content">
+                                <div>
+                                    <i class="icon-lg ion-ios-search"></i>
+                                    <p>
+                                      PVInsight
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="last" class="bg-primary last">
+  <section id="last" class="bg-primary">
 
     <!--The link below is the link for the contact form. It was embedded using google forms. Needs to be changed for who the contact person is going to be by creating a new form and pasteing the URL link for it.
 Keep in mind to set the width and height settings manually.

@@ -14,6 +14,8 @@ body {
     webkit-tap-highlight-color: #222;
 }
 
+.section-full { height: 100vh; }
+
 hr {
     max-width: 80px;
     border-width: 3px;
@@ -35,7 +37,7 @@ a {
 
 a:hover,
 a:focus {
-    color: white; //#9c27c1
+    color: #959496; //#9c27c1
     outline: 0;
 }
 
@@ -630,6 +632,10 @@ z-index:-999999;
   z-index:-1;
 }
 
+.responsive {
+    width: 100%;
+    height: auto;
+}
 
 iframe.publ {display:block}
 .w3-container,.w3-panel{padding:0.01em 16px}.w3-panel{margin-top:16px;margin-bottom:16px}
